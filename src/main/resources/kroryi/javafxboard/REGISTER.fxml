@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kroryi.javafxboard.controller.RegisterController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="600.0" stroke="#ffffff00" strokeType="INSIDE" width="880.0">
+         <fill>
+            <LinearGradient endX="0.780952380952381" endY="0.8714285714285714" startX="0.5666666666666667">
+               <stops>
+                  <Stop color="#7b9acc" />
+                  <Stop color="#e7d4eb9e" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ListView layoutX="67.0" layoutY="103.0" prefHeight="398.0" prefWidth="746.0" style="-fx-background-color: #fcf6f5; -fx-background-radius: 20;" />
+      <Label layoutX="152.0" layoutY="369.0" prefHeight="35.0" prefWidth="96.0" text="P.W Check : ">
+         <font>
+            <Font name="DejaVu Sans Condensed Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="209.0" layoutY="216.0" prefHeight="35.0" prefWidth="38.0" text="ID :">
+         <font>
+            <Font name="DejaVu Sans Condensed Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="157.0" layoutY="319.0" prefHeight="35.0" prefWidth="96.0" text="Password :">
+         <font>
+            <Font name="DejaVu Sans Condensed Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="184.0" layoutY="268.0" prefHeight="35.0" prefWidth="69.0" text="Name :">
+         <font>
+            <Font name="DejaVu Sans Condensed Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" layoutX="383.0" layoutY="517.0" mnemonicParsing="false" onAction="#moveToLogin" opacity="0.72" prefHeight="59.0" prefWidth="154.0" style="-fx-background-color: #72bee4; -fx-background-radius: 15;" text="Sign in" textFill="#fcf6f5">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="DejaVu Sans Condensed Bold" size="21.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfId" layoutX="252.0" layoutY="218.0" prefHeight="31.0" prefWidth="224.0" promptText="아이디를 입력해주세요." />
+      <TextField fx:id="tfUsername" layoutX="252.0" layoutY="268.0" prefHeight="35.0" prefWidth="224.0" promptText="이름을 입력해주세요." />
+      <PasswordField fx:id="tfPw" layoutX="252.0" layoutY="321.0" prefHeight="31.0" prefWidth="224.0" promptText="비밀번호를 입력해주세요." />
+      <PasswordField fx:id="tfPwre" layoutX="252.0" layoutY="369.0" prefHeight="35.0" prefWidth="224.0" promptText="비밀번호를 재입력해주세요." />
+      <Button alignment="CENTER" layoutX="506.0" layoutY="346.0" mnemonicParsing="false" onAction="#register" opacity="0.72" prefHeight="59.0" prefWidth="224.0" style="-fx-background-color: #72bee4; -fx-background-radius: 15;" text="Submit" textFill="#fcf6f5">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="DejaVu Sans Condensed Bold" size="21.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="349.0" layoutY="458.0" opacity="0.66" text="Already have an account?" textFill="#d94cc4bb">
+         <font>
+            <Font name="DejaVu Sans Condensed Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="450.0" layoutY="479.0" text="⏬">
+         <font>
+            <Font name="Britannic Bold" size="31.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.9095238095238095">
+               <stops>
+                  <Stop color="#d664e3" />
+                  <Stop color="#3ec6e1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label alignment="CENTER" layoutX="541.0" layoutY="315.0" text="ପ(੭◍ ´ᵕ`◍)੭ ❁˚๑₊· ͟͟͞͞➳➲">
+         <font>
+            <Font name="Britannic Bold" size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.9095238095238095">
+               <stops>
+                  <Stop color="#d664e3" />
+                  <Stop color="#3ec6e1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fitHeight="172.0" fitWidth="168.0" layoutX="380.0" layoutY="19.0" opacity="0.44" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <image>
+            <Image url="@Image/home.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="517.0" layoutY="214.0" text="Thank you for">
+         <font>
+            <Font name="DejaVu Sans Condensed Bold" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.9095238095238095">
+               <stops>
+                  <Stop color="#d664e3" />
+                  <Stop color="#3ec6e1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label alignment="CENTER" layoutX="543.0" layoutY="261.0" text="joining us">
+         <font>
+            <Font name="DejaVu Sans Condensed Bold" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.9095238095238095">
+               <stops>
+                  <Stop color="#d664e3" />
+                  <Stop color="#3ec6e1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

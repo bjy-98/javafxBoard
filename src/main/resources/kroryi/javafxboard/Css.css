@@ -1,0 +1,25 @@
+#boardTableView{
+    -fx-font-family: "DejaVu Sans Condensed";
+    -fx-font-size: 14px;
+    -fx-alignment: center;
+}
+
+#TableColumn{
+    -fx-border-color: #72bee4;
+    -fx-text-fill: #72bee4;
+}
+
+.label, .text-area, .text-field{
+    -fx-font-family: "DejaVu Sans Condensed";
+}
+
+.button {
+    -fx-font-family: "DejaVu Sans Condensed";
+    -fx-background-color: #72bee4;
+    -fx-background-radius: 15;
+}
+
+#colNo,#colRegDate, #colUpdDate{
+    -fx-alignment: center;
+}
+
